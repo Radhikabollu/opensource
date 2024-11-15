@@ -1,0 +1,11 @@
+
+T = int(input())
+
+
+results = []
+for _ in range(T):
+    N, M = map(int, input().split())
+    unserved_students = max(0, N - M)
+    results.append(unserved_students)
+
+print("\n".join(map(str, results)))
