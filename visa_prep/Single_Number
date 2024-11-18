@@ -1,0 +1,11 @@
+N = int(input())
+arr = list(map(int, input().split()))
+arr.sort()
+i = 0
+while i < N-1:
+    if arr[i] != arr[i+1]:
+        print(arr[i])
+        break
+    i += 2
+else:  
+    print(arr[-1])
