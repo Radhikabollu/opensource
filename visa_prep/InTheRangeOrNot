@@ -1,0 +1,11 @@
+def is_audible(frequency):
+    return 67 <= frequency <= 45000
+
+T = int(input())
+
+
+for _ in range(T):
+   
+    X = int(input())
+    
+    print("YES" if is_audible(X) else "NO")
