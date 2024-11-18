@@ -1,0 +1,10 @@
+def runs_needed_to_win(X, Y):
+    return X - Y + 1
+
+T = int(input()) 
+
+for _ in range(T):
+  
+    X, Y = map(int, input().split())
+    
+    print(runs_needed_to_win(X, Y))
